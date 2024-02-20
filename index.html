@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condicionales</title>
+
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1 class="title">CONDICIONALES</h1>
+    <section id="menu" class="active">
+        <h3 class="section-title">Seleccione el programa a ejecutar</h3>
+        <div class="container-btn">
+            <button id="section1" class="btn menu-btn  btn-primary" type="button" onclick="menu(this.id)">Eres bellisimo/a</button>
+            <button id="section2" class="btn menu-btn  btn-primary" type="button" onclick="menu(this.id)">Número divisible entre dos</button>
+            <button id="section3" class="btn menu-btn  btn-primary" type="button" onclick="menu(this.id)">Número par o impar</button>
+            <button id="section4" class="btn menu-btn  btn-primary" type="button" onclick="menu(this.id)">Número ganador</button>
+            <button id="section5" class="btn menu-btn  btn-primary" type="button" onclick="menu(this.id)">Número menor</button>
+            <button id="section6" class="btn menu-btn  btn-primary" type="button" onclick="menu(this.id)">Número mayor</button>
+            <button id="section7" class="btn menu-btn  btn-primary" type="button" onclick="menu(this.id)">Día de la semana</button>
+            <button id="section8" class="btn menu-btn  btn-primary" type="button" onclick="menu(this.id)">Escala de calificaciones</button>
+            <button id="section9" class="btn menu-btn  btn-primary" type="button" onclick="menu(this.id)">Heladeria</button>
+            <button id="section10" class="btn menu-btn  btn-primary" type="button" onclick="menu(this.id)">Educación en tecnología</button>
+            <button id="section11" class="btn menu-btn  btn-primary" type="button" onclick="menu(this.id)">Pago de vehículo</button>
+        </div>
+    </section>
+
+    <section class="containers-wrapper"> 
+        <div class="container" id="exercise1">
+            <h3 class="section-title">Programa 1</h3>
+            <p class="question">¿Eres bellisimo/a?</p>
+            <input id="ej1Input" type="text" class="input-below">
+            <button class="btn btn-primary" type="button" onclick="exercise1()">Comprobar</button>
+            <p class="answer" id="ej1Answer"></p>
+        </div>
+
+        <div class="container" id="exercise2">
+            <h3 class="section-title">Programa 2</h3>
+            <p>Ingrese un número: <input id="ej2Input" type="number"></p>
+            <button class="btn btn-primary" type="button" onclick="exercise2()">Comprobar si es divisible entre 2</button>
+            <p class="answer" id="ej2Answer"></p>
+        </div>
+
+        <div class="container" id="exercise3">
+            <h3 class="section-title">Programa 3</h3>
+            <p>Ingrese un número: <input id="ej3Input" type="number"></p>
+            <button class="btn btn-primary" type="button" onclick="exercise3()">Comprobar si es par</button>
+        </div>
+
+        <div class="container" id="exercise4">
+            <h3 class="section-title">Programa 4</h3>
+            <p>Ingrese número de cliente: <input id="ej4Input" type="number"></p>
+            <button class="btn btn-primary" type="button" onclick="exercise4()">Comprobar premio</button>
+            <p class="answer" id="ej4Answer"></p>
+        </div>
+
+        <div class="container" id="exercise5">
+            <h3 class="section-title">Programa 5</h3>
+            <p>
+                Ingrese primer número: <input id="ej5Input1" type="number"><br>
+                Ingrese segundo número: <input id="ej5Input2" type="number"><br>
+            </p>
+            <button class="btn btn-primary" type="button" onclick="exercise5()">Comprobar cual es menor</button>
+            <p class="answer" id="ej5Answer"></p>
+        </div>
+
+        <div class="container" id="exercise6">
+            <h3 class="section-title">Programa 6</h3>
+            <p>
+                Ingrese primer número: <input id="ej6Input1" type="number"><br>
+                Ingrese segundo número: <input id="ej6Input2" type="number"><br> 
+                Ingrese tercer número: <input id="ej6Input3" type="number"><br>
+            </p>
+            <button class="btn btn-primary" type="button" onclick="exercise6()">Mostrar el mayor</button>
+            <p class="answer" id="ej6Answer"></p>
+        </div>
+
+        <div class="container" id="exercise7">
+            <h3 class="section-title">Programa 7</h3>
+            <p>Ingrese un día de la semana: <input id="ej7Input" type="text"></p>
+            <button class="btn btn-primary" type="button" onclick="exercise7()">Mostrar mensaje</button>
+            <p class="answer" id="ej7Answer"></p>
+        </div>
+
+        <div class="container" id="exercise8">
+            <h3 class="section-title">Programa 8</h3>
+            <p>Ingrese una calificación (1-10): <input id="ej8Input" type="number"></p>
+            <button class="btn btn-primary" type="button" onclick="exercise8()">Comprobar calificación</button>
+            <p class="answer" id="ej8Answer"></p>
+        </div>
+
+        <div class="container" id="exercise9">
+            <h3 class="section-title">Programa 9</h3>
+            <p class="question">¿Con qué topping desea su helado?</p>
+            <select id="ej9Helado" class="dropdown-below">
+                <option value="sin topping">Helado sin topping</option>
+                <option value="oreo">Helado con topping de oreo</option>
+                <option value="kitkat">Helado con topping de kitkat</option>
+                <option value="brownie">Helado con topping de brownie</option>
+                <option value="otro">Helado con otro topping</option>
+            </select>
+            <button class="btn btn-primary" type="button" onclick="exercise9()">Calcular precio</button>
+            <p class="answer" id="ej9Answer"></p>
+        </div>
+
+        <div class="container" id="exercise10">
+            <h3 class="section-title">Programa 10</h3>
+            <p class="question">¿Qué programa deseas?</p>
+            <select id="ej10Programa" class="dropdown">
+                <option value="course">Course</option>
+                <option value="carrera">Carrera</option>
+                <option value="master">Master</option>
+            </select>
+            <p>¿Tienes alguna beca?</p>
+            <select id="ej10Beca" class="dropdown">
+                <option value="ninguna">Ninguna</option>
+                <option value="facebook">Beca Facebook</option>
+                <option value="google">Beca Google</option>
+                <option value="jesua">Beca Jesua</option>
+            </select><br>
+            <button class="btn btn-primary" type="button" onclick="exercise10()">Calcular precio</button>
+            <p class="answer" id="ej10Answer"></p>
+        </div>
+
+        <div class="container" id="exercise11">
+            <h3 class="section-title">Programa 11</h3>
+            <p>
+                Tipo de vehículo:
+                <select id="ej11Vehiculo">
+                    <option value="coche">Coche</option>
+                    <option value="moto">Moto</option>
+                    <option value="autobus">Autobús</option>
+                </select><br>
+                Kms recorridos: <input id="ej11Kms" type="number" onclick=complementValues()><br>
+                Litros consumidos: <input id="ej11Litros" type="number" onclick=complementValues()>
+            </p>
+            <button class="btn btn-primary" type="button" onclick="exercise11()">Calcular total</button>
+            <p class="answer" id="ej11Answer"></p>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    
+    <!-- JS -->
+    <script src="./main.js"></script>
+</body>
+</html>
