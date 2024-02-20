@@ -1,8 +1,8 @@
-# PÁGINA WEB INTERACTIVA DE EJERCICIOS DE CONDICIONALES EN JAVASCRIPT
+# EJERCICIOS DE CONDICIONALES EN JAVASCRIPT
 
 ## DESCRIPCIÓN
 
-Este repositorio contiene una página web interactiva que ofrece una serie de ejercicios de programación en JavaScript. La página está diseñada para proporcionar a los usuarios una plataforma educativa y práctica donde puedan mejorar sus habilidades de programación mediante la resolución de problemas y ejercicios variados.
+Este repositorio contiene una página web interactiva que ofrece una serie de ejercicios de programación para practicar el uso de condicionales en JavaScript. Incluye comparaciones, validaciones, operadores lógicos y switch statements.
 
 Características principales:
 
@@ -30,10 +30,12 @@ Se ha utilizado Bootstrap para garantizar que la página web sea completamente r
 
 ## CÓMO USAR
 
-- Clona este repositorio en tu máquina local.
-- Abre el archivo index.html en tu navegador web preferido.
-- Explora los diferentes ejercicios de programación y disfruta de una experiencia interactiva de aprendizaje.
-- ¡Espero que disfrutes utilizando esta página web para mejorar tus habilidades de programación en JavaScript!
+- Clona este repositorio
+- Abre index.html en tu navegador web
+- Prueba los ejercicios de condicionales
+- Mejora tus habilidades en JavaScript
+
+¡Espero que disfrutes utilizando esta página web para mejorar tus habilidades de programación en JavaScript!
 
 ## AUTOR
 
@@ -41,6 +43,6 @@ Linda Melissa Casas Huanca
 
 ## URL
 
-GitHub:  
-GitHub Pages: 
+GitHub: https://github.com/lindacasas/condicionales-javascript
+GitHub Pages: https://lindacasas.github.io/condicionales-javascript/
 
