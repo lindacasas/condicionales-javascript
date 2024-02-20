@@ -43,6 +43,6 @@ Linda Melissa Casas Huanca
 
 ## URL
 
-GitHub: https://github.com/lindacasas/condicionales-javascript
-GitHub Pages: https://lindacasas.github.io/condicionales-javascript/
+- GitHub: https://github.com/lindacasas/condicionales-javascript
+- GitHub Pages: https://lindacasas.github.io/condicionales-javascript/
 
